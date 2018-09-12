@@ -195,6 +195,52 @@ font-size:250%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+	  .masonry-brick1 {
+    color: black;
+    background-color: #fff;
+    display: inline-block;
+    font-color:black;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1em 0; /* for separating masonry-bricks vertically*/
+}
+
+.masonry-brick2 {
+    color: black;
+    background-color: #fff;
+    display: inline-block;
+    font-color:black;
+    padding: 10px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1em 15px 0;
+    width: 110%;/* for separating masonry-bricks vertically*/
+}
+
+@media only screen and (min-width: 480px) {
+    .masonry-container {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .masonry-container {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .masonry-container {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
 	  
 	  .parallax11 { 
     /* The image used */
@@ -456,150 +502,51 @@ The workshop is intended for individuals with scientific, technical, policy, and
     <span class="glyphicon glyphicon-chevron-up"></span></a>
 		<div class="parallax1" id="Session"></div>
 	<div class="container text-center"><center><br>
-  <div class="row"><h1><center>Focus Areas and Topics</center></h1><br></div><p>
-   <div style="overflow-x:auto;">
-  <table class="table table-bordered table-fixed"><tr>
-    <th><center><div class="heading">Topics</heading></center></th>
-       <th><center><div class="heading">Focus</heading></center></th>
-      </tr>
-<tbody>   
-      <tr>
-        <td><center><br><br><div class="heading">Design and Implementation</div><br><br></center></td>
-        <td><table class="table  table-hover">
-        <tr>
-        <td><div class="heading">Flight control, navigation, telematics, and collision avoidance</div>
-        </td>
-        </tr>
-        </hr><tr>
-        <td><div class="heading"> Autonomous drones</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading"> Drone formation flying and swarming</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td> <div class="heading">Underwater drone technology</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading">Computing aspects of drones</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading">Drone communication and communication security</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading">Ethics of drone manufacturing, design and use</div>
-        </td>
-        </tr>
-        </table></td></tr>
-     <tr>
-        <td><center><br><br><br><br><br><br><br><br><div class="heading">Applications of Drones</div><br><br><br><br><br><br><br><br></center></td>
-        <td><table class="table  table-hover">
-        <tr>
-        <td> <div class="heading">Infrastructure inspection (e.g., bridges, tunnels, dams, pipelines, structures, industrial plants)</div>
-        </td>
-        </tr>
-        </hr><tr>
-        <td> <div class="heading">Surveying (pre-construction and during construction)</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading"> Traffic surveillance (data collection) and traffic incident management</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td> <div class="heading"> Utilities management</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td> <div class="heading">Oil and gas industry</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading">Maritime applications, including underwater</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading"> Mail and parcel delivery</div>
-        </td>
-        </tr></hr>
-        <tr>
-        <td><div class="heading">Homeland security, law enforcement</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading"> 5G Communication</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading"> Real estate, insurance, tourism, and entertainment</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading"> Remote sensing, mapping, surveying, SLAM, and aerial data collection</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading">Meteorology, climate and weather prediction and analysis</div>
-        </td>
-        </tr>
-        </hr>
-         <tr>
-        <td><div class="heading">Disaster response and post-disaster response</div>
-        </td>
-        </tr>
-        </hr>
-         <tr>
-        <td><div class="heading"> Agricultural and farming</div>
-        </td>
-        </tr>
-        </table></td></tr>
-         <tr>
-        <td><center><br><br><br><br><div class="heading">Design and Implementation</div><br><br><br><br></center></td>
-        <td><table class="table   table-hover">
-        <tr>
-        <td> <div class="heading">Use of drones in education</div>
-        </td>
-        </tr>
-        </hr><tr>
-        <td><div class="heading"> Training for drone operators</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td><div class="heading">  Regulation and legal framework for registration, licensing and operation of drones</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td> <div class="heading"> Public safety and security aspects of drone operation</div>
-        </td>
-        </tr>
-        </hr>
-        <tr>
-        <td> <div class="heading">Drones in the popular press, movies, internet and other public media</div>
-        </td>
-        </tr>
-        </table></td></tr>
-    </tbody></h2>
-  </table></div> </div></div> <a href="#myCarousel" title="Click to Go Back To Top" style="margin-left:95%">
+ <div class="masonry-container">
+ 
+
+   <div class="masonry-brick1">
+   <div class="row">
+  <div class="column">
+        <h2>Design and Implementation</h2>
+        <p>Flight control, navigation, telematics, and collision avoidance</p>
+        <p>Autonomous drones</p>
+             <p>Drone formation flying and swarming</p>
+        <p>Underwater drone technology</p>
+             <p>Computing aspects of drones</p>
+             <p>Drone communication and communication security.</p>
+        <p>Ethics of drone manufacturing, design and use</p>
+      </div>
+    </div>
+    </div>
+    <div class="masonry-brick1">
+     <div class="row">
+    <div class="column">
+    <h2>Design and Implementation</h2>
+        <p>Use of drones in education</p>
+        <p>Training for drone operators</p>
+        <p>Regulation and legal framework for registration, licensing and operation of drones</p>
+        <p>Public safety and security aspects of drone operation</p>
+        <p>Drones in the popular press, movies, internet and other public media</p>
+        
+      </div>
+    </div>
+    </div>
+    <div class="masonry-brick2"> <h2>Applications of Drones</h2>
+        <p>Infrastructure inspection (e.g., bridges, tunnels, dams, pipelines, structures, industrial plants)</p>
+        <p>Surveying (pre-construction and during construction)</p>
+        <p>Traffic surveillance (data collection) and traffic incident management</p>
+         <p>Utilities management</p>
+        <p>Oil and gas industry</p>
+        <p>Maritime applications, including underwater</p>
+           <p>Mail and parcel delivery</p>
+        <p>Homeland security, law enforcement</p>
+        <p>5G Communication</p>
+        <p>Real estate, insurance, tourism, and entertainment</p>
+        <p>Remote sensing, mapping, surveying, SLAM, and aerial data collection</p>
+        <p>Meteorology, climate and weather prediction and analysis</p>
+        <p>Disaster response and post-disaster response</p>
+        <p>Agricultural and farming</p></div></div> <a href="#myCarousel" title="Click to Go Back To Top" style="margin-left:95%">
     <span class="glyphicon glyphicon-chevron-up"></span></a>
 <div class="parallax"></div>
 <div id="PaperCall" style="top:0px">
