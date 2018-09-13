@@ -20,6 +20,11 @@
       $('html, body').animate({ scrollTop: target.offset().top-180 }, 1000);
       return false;
   });
+		$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
 });
 	</script>
 </head>
@@ -195,42 +200,49 @@ font-size:250%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-	  .masonry-brick {
-		  font-family:"Oswald";
-    color: black;
-    background-color: #fff;
-    display: inline-block;
-    font-color:black;
-    padding: 10px;
-    width: 120%;
-    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-left: 10em 0px; /* for separating masonry-bricks vertically*/
+	  
+	  
+	* { box-sizing: border-box; }
+
+body { font-family: 'Oswald'; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #ff;
+  max-width: 1200px;
 }
 
-
-@media only screen and (min-width: 480px) {
-    .masonry-container {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-@media only screen and (min-width: 768px) {
-    .masonry-container {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
-    }
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
 }
 
-@media only screen and (min-width: 960px) {
-    .masonry-container {
-        -moz-column-count: 5;
-        -webkit-column-count: 5;
-        column-count: 5;
-    }
+.grid-item {
+  height: 120px;
+  float: left;
+  background: #fff;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  padding:6px;
 }
+
+.grid-item--width2 { width:  55%; }
+.grid-item--width3 { width:  40%; }
+
+.grid-item--height2 { height: 550px; }
+.grid-item--height3 { height: 400px; }
+.grid-item--height4 { height: 315px; }
 
 	  
 	  .parallax11 { 
@@ -492,28 +504,20 @@ The workshop is intended for individuals with scientific, technical, policy, and
 		</div> <a href="#myCarousel" title="Click to Go Back To Top" style="margin-left:95%">
     <span class="glyphicon glyphicon-chevron-up"></span></a>
 		<div class="parallax1" id="Session"></div>
-	<div class="container text-center"><center></center>
-		<br>
-	<div class="row">
-  <div class="column">
-    <div class="card">
-      <div class="container2">
-        <h2>Design and Implementation</h2>
+	<div class="container text-center">
+		<h1><center>Focus Areas And Topics</center></h1>
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item grid-item--width3 grid-item--height4"> <h2>Design and Implementation</h2>
         <p>Flight control, navigation, telematics, and collision avoidance</p>
         <p>Autonomous drones</p>
              <p>Drone formation flying and swarming</p>
         <p>Underwater drone technology</p>
              <p>Computing aspects of drones</p>
              <p>Drone communication and communication security.</p>
-        <p>Ethics of drone manufacturing, design and use</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <div class="container2">
-        <h2>Applications of Drones</h2>
+        <p>Ethics of drone manufacturing, design and use</p></div>
+  <div class="grid-item grid-item--width2 grid-item--height2">  <h2>Applications of Drones</h2>
         <p>Infrastructure inspection (e.g., bridges, tunnels, dams, pipelines, structures, industrial plants)</p>
         <p>Surveying (pre-construction and during construction)</p>
         <p>Traffic surveillance (data collection) and traffic incident management</p>
@@ -526,24 +530,17 @@ The workshop is intended for individuals with scientific, technical, policy, and
         <p>Remote sensing, mapping, surveying, SLAM, and aerial data collection</p>
         <p>Meteorology, climate and weather prediction and analysis</p>
         <p>Disaster response and post-disaster response</p>
-        <p>Agricultural and farming</p>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-      <div class="container2">
-        <h2>Design and Implementation</h2>
+    <p>Agricultural and farming</p></div>
+    <div class="grid-item grid-item--width3 grid-item--height4"> <h2>Design and Implementation</h2>
         <p>Use of drones in education</p>
         <p>Training for drone operators</p>
         <p>Regulation and legal framework for registration, licensing and operation of drones</p>
         <p>Public safety and security aspects of drone operation</p>
         <p>Drones in the popular press, movies, internet and other public media</p>        <p>Real estate, insurance, tourism, and entertainment</p>
+</div>
 
-      </div>
-    </div>
-  </div>
-</div></div>
+</div>
+	</div>
 		<a href="#myCarousel" title="Click to Go Back To Top" style="margin-left:95%">
     <span class="glyphicon glyphicon-chevron-up"></span></a>
 <div class="parallax"></div>
